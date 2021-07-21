@@ -25,6 +25,7 @@ class MainActivity : AppCompatActivity() {
         binding = DataBindingUtil.setContentView<ActivityMainBinding>(this, R.layout.activity_main)
         appBarConfiguration = AppBarConfiguration.Builder(
             R.id.welcomeFragment,
+            R.id.loginFragment,
             R.id.shoeListFragment,
             R.id.shoeDetailFragment
         ).build()
@@ -71,8 +72,12 @@ class MainActivity : AppCompatActivity() {
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        if(item.itemId == R.id.logout_button) {
-            viewModel.logout()
+        when(item.itemId){
+            R.id.logout_button -> viewModel.logout()
+            android.R.id.home -> {
+                onBackPressed()
+                return true
+            }
         }
         return super.onOptionsItemSelected(item)
     }
