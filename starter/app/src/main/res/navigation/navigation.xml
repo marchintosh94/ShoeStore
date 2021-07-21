@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/navigation"
-    app:startDestination="@id/welcomeFragment">
+    app:startDestination="@id/loginFragment">
 
     <fragment
         android:id="@+id/loginFragment"
@@ -16,9 +16,7 @@
             app:enterAnim="@anim/enter_animation"
             app:exitAnim="@anim/exit_animation"
             app:popEnterAnim="@anim/enter_animation"
-            app:popExitAnim="@anim/exit_animation"
-            app:popUpTo="@id/welcomeFragment"
-            app:popUpToInclusive="true" />
+            app:popExitAnim="@anim/exit_animation" />
     </fragment>
     <fragment
         android:id="@+id/welcomeFragment"
@@ -31,8 +29,7 @@
             app:enterAnim="@anim/enter_animation"
             app:exitAnim="@anim/exit_animation"
             app:popEnterAnim="@anim/enter_animation"
-            app:popExitAnim="@anim/exit_animation"
-            app:popUpTo="@id/welcomeFragment" />
+            app:popExitAnim="@anim/exit_animation" />
     </fragment>
     <fragment
         android:id="@+id/instructionFragment"
@@ -46,7 +43,7 @@
             app:exitAnim="@anim/exit_animation"
             app:popEnterAnim="@anim/enter_animation"
             app:popExitAnim="@anim/exit_animation"
-            app:popUpTo="@id/welcomeFragment" />
+            app:popUpTo="@id/loginFragment" />
     </fragment>
     <fragment
         android:id="@+id/shoeListFragment"
@@ -59,9 +56,7 @@
             app:enterAnim="@anim/enter_animation"
             app:exitAnim="@anim/exit_animation"
             app:popEnterAnim="@anim/enter_animation"
-            app:popExitAnim="@anim/exit_animation"
-            app:popUpTo="@id/shoeListFragment"
-            app:popUpToInclusive="false" />
+            app:popExitAnim="@anim/exit_animation" />
     </fragment>
     <fragment
         android:id="@+id/shoeDetailFragment"
