@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <data>
+        <variable
+            name="shoe"
+            type="com.udacity.shoestore.models.Shoe" />
+    </data>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/shoe_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin16">
+
+        <LinearLayout
+            android:id="@+id/shoe_linear_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:padding="@dimen/padding16">
+
+            <ImageView
+                android:id="@+id/shoe_image"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/image"
+                android:contentDescription="@string/shoe_image" />
+
+            <TextView
+                android:id="@+id/shoe_name"
+                style="@style/CenteredText"
+                android:textSize="@dimen/Titol2"
+                android:text="@{shoe.name}"/>
+
+            <TextView
+                android:id="@+id/shoe_company"
+                style="@style/CenteredText"
+                android:textSize="@dimen/subtitle2"
+                android:text="@{shoe.company}"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</layout>

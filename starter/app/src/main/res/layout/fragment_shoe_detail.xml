@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".pages.shoeDetail.ShoeDetailFragment">
+
+    <data>
+        <variable
+            name="storeViewModel"
+            type="com.udacity.shoestore.StoreViewModel" />
+    </data>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="@dimen/margin16">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/cancel_button"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="@dimen/margin16"
+                    android:src="@drawable/ic_round_arrow_back_24"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:clickable="true"
+                    android:onClick="@{() -> storeViewModel.onCancelDetailForm()}"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:contentDescription="@string/cancel"
+                    android:focusable="true" />
+
+                <ImageView
+                    android:id="@+id/image_shoe_detail"
+                    android:layout_width="@dimen/image_sm"
+                    android:layout_height="@dimen/image_sm"
+                    android:layout_marginTop="@dimen/margin16"
+                    android:layout_marginBottom="@dimen/margin16"
+                    app:srcCompat="@drawable/new_shoe"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:contentDescription="@string/image_shoe_detail" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                style="@style/GlobalText"
+                android:labelFor="@+id/shoe_name"
+                android:text="@string/name" />
+
+            <EditText
+                android:id="@+id/shoe_name"
+                style="@style/MarginBottomText"
+                android:ems="10"
+                android:text="@={storeViewModel.shoeDetail.name}"
+                android:inputType="textShortMessage" />
+
+            <TextView
+                style="@style/GlobalText"
+                android:labelFor="@+id/shoe_company_edit"
+                android:text="@string/company" />
+
+            <EditText
+                android:id="@+id/shoe_company_edit"
+                style="@style/MarginBottomText"
+                android:text="@={storeViewModel.shoeDetail.company}"
+                android:ems="10"
+                android:inputType="textShortMessage" />
+
+            <TextView
+                style="@style/GlobalText"
+                android:labelFor="@+id/shoe_size"
+                android:text="@string/size" />
+
+            <EditText
+                android:id="@+id/shoe_size"
+                style="@style/MarginBottomText"
+                android:text="@={storeViewModel.shoeSize}"
+                android:ems="10"
+                android:inputType="number" />
+
+            <TextView
+                style="@style/GlobalText"
+                android:labelFor="@+id/shoe_description"
+                android:text="@string/description" />
+
+            <EditText
+                android:id="@+id/shoe_description"
+                style="@style/EditText"
+                android:layout_marginBottom="@dimen/margin16"
+                android:text="@={storeViewModel.shoeDetail.description}"
+                android:ems="10"
+                android:inputType="textShortMessage" />
+
+            <Button
+                android:id="@+id/save_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin16"
+                android:onClick="@{() -> storeViewModel.validateShoe()}"
+                android:text="@string/save"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</layout>

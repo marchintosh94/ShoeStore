@@ -1,3 +1,31 @@
 <resources>
     <string name="app_name">ShoeStore</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="signup">signup</string>
+    <string name="welcome">Welcome to ShoeStore</string>
+    <string name="username_value">%s</string>
+    <string name="top_quality_guaranteed">Top quality guaranteed</string>
+    <string name="enter">Enter</string>
+    <string name="instructions">Once you tap the button below, you will go to the
+    shoes\' list. In order to add a new pair of shoes to it, click the plus-button to the lower
+    right corner of the screen. Enjoy the store </string>
+    <string name="instructions_title">Instructions</string>
+    <string name="store">Store</string>
+    <string name="app_logo">app logo</string>
+    <string name="ShoeStore">ShoeStore</string>
+    <string name="shoe_detail">Shoe Detail</string>
+    <string name="shoe_image">shoe image</string>
+    <string name="logout">Logout</string>
+    <string name="info">Info</string>
+    <string name="name">Name</string>
+    <string name="company">Company</string>
+    <string name="size">Size</string>
+    <string name="description">Description</string>
+    <string name="image_shoe_detail">image shoe detail</string>
+    <string name="cancel">Cancel</string>
+    <string name="save">Save</string>
 </resources>

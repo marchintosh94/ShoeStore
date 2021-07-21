@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".pages.welcome.WelcomeFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/padding16"
+        android:gravity="center_vertical|center_horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/image"
+            android:layout_height="@dimen/image"
+            app:srcCompat="@drawable/shoes_icon_1320186144893068778"
+            android:contentDescription="@string/app_logo" />
+
+        <TextView
+            android:id="@+id/welcome_string"
+            android:text="@string/welcome"
+            android:textSize="@dimen/Titol1"
+            style="@style/CenteredText"
+            />
+
+        <TextView
+            android:id="@+id/user_string"
+            android:text="@string/top_quality_guaranteed"
+            android:textAllCaps="false"
+            style="@style/CenteredText"
+            />
+
+        <Button
+            android:id="@+id/button_enter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="@dimen/margin16"
+            android:text="@string/enter"
+            style="@style/GlobalText"/>
+
+    </LinearLayout>
+
+</layout>

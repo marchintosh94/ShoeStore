@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="Titol1">30sp</dimen>
+    <dimen name="Titol2">25sp</dimen>
+    <dimen name="Titol3">18sp</dimen>
+    <dimen name="subtitle1">14sp</dimen>
+    <dimen name="subtitle2">12sp</dimen>
+    <dimen name="subtitle3">10sp</dimen>
+    <dimen name="padding16">16dp</dimen>
+    <dimen name="margin16">16dp</dimen>
+    <dimen name="margin20">16dp</dimen>
+    <dimen name="image">200dp</dimen>
+    <dimen name="image_sm">150dp</dimen>
+</resources>

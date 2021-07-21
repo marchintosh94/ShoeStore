@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".pages.instruction.InstructionFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/padding16"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/instruction_title"
+            style="@style/CenteredText"
+            android:padding="@dimen/padding16"
+            android:text="@string/instructions_title"
+            android:textSize="@dimen/Titol2" />
+
+        <TextView
+            android:id="@+id/instructions"
+            style="@style/GlobalText"
+            android:padding="@dimen/padding16"
+            android:text="@string/instructions" />
+
+        <Button
+            android:id="@+id/button_store"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/store" />
+    </LinearLayout>
+
+</layout>

@@ -7,13 +7,32 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
-    <style name="AppTheme.NoActionBar">
-        <item name="windowActionBar">false</item>
-        <item name="windowNoTitle">true</item>
-    </style>
 
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
-    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+    <style name="AppTheme.PopupOverlay"/>
 
+    <style name="GlobalText">
+        <item name="fontFamily">@font/montserrat</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="CenteredText" parent="GlobalText">
+        <item name="android:textAlignment">center</item>
+    </style>
+
+    <style name="MarginBottomText" parent="GlobalText">
+        <item name="android:layout_marginBottom">@dimen/margin20</item>
+    </style>
+
+    <style name="FloatingButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">@dimen/margin16</item>
+    </style>
+
+    <style name="EditText" parent="GlobalText">
+        <item name="android:imeOptions">actionDone</item>
+    </style>
 </resources>
